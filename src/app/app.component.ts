@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-course-projet';
+  loadedFeatured: string = 'recipes';
+
+  onNavigate(featured: string) {
+    this.loadedFeatured = featured;
+  }
 }
